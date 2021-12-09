@@ -23,9 +23,9 @@ class TestCalculator(unittest.TestCase):
 
     def test_should_calculate_total(self):
         amount = 100
-        tip = 1
-        total = calculateTotal(amount, tip)
-        self.assertEqual(total, 101)
+        percentage = 0.1
+        total = calculateTotal(amount, percentage)
+        self.assertEqual(total, 110)
 
 
 if __name__ == '__main__':
